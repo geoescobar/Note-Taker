@@ -14,9 +14,6 @@ app.use('/', api);
 app.use(express.static('public'));
 
 
-
-
-
 // listening to the port 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)

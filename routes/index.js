@@ -1,11 +1,12 @@
+// requiring/invoking express
 const express = require('express');
 const app = express();
 
-// Import our modular routers for /tips and /feedback
+// Import our routers for /html and /notes
 const htmlRouter = require('./html');
 const notesRouter = require('./notes');
 
-// TODO: import your diagnostics route
+// import your routes
 app.use('/', htmlRouter);
 app.use('/api/notes', notesRouter);
 

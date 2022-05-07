@@ -6,6 +6,7 @@ const util = require("util");
 // Promise version of fs.readFile
 const readFromFile = util.promisify(fs.readFile);
 
+// reading data and appending given content 
 const readAndAppend = (content, file) => {
     fs.readFile(file, 'utf8', (err, data) => {
       if (err) {
@@ -31,7 +32,7 @@ router.get("/", (req, res) => {
 
 
 
-// POST Route for a new UX/UI tip
+// POST Route for a new note 
 router.post('/', (req, res) => {
     console.log(req.body);
   
@@ -41,8 +42,8 @@ router.post('/', (req, res) => {
       const newNote = {
         title,
         text,
-        // delete note 
-        // tip_id: uuidv4(),
+        // delete note (assignment bonus)
+        note_id: uuidv4(),
       };
   
       readAndAppend(newNote, './db/notes.json');
