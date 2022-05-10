@@ -2,6 +2,7 @@ const router = require("express").Router();
 const res = require("express/lib/response");
 const fs = require("fs");
 const util = require("util");
+const uuidv4 = require('uuidv4');
 
 // Promise version of fs.readFile
 const readFromFile = util.promisify(fs.readFile);
@@ -30,7 +31,9 @@ router.get("/", (req, res) => {
   readFromFile("./db/notes.json").then((data) => res.json(JSON.parse(data)));
 });
 
-
+router.delete('/', (req, res) => {
+  req.params.id
+})
 
 // POST Route for a new note 
 router.post('/', (req, res) => {
