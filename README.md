@@ -51,10 +51,10 @@
   
   #### [Github Repo](https://github.com/geoescobar/Note-Taker)
 
-  ![img](./assets/github-repo.png)
+  ![img](./Assets/github-repo.png)
 
   #### [Github Pages](https://geoescobar.github.io/Note-Taker/)
-  ![img](./assets/github-pages.png)
+  ![img](./Assets/github-pages.png)
 
   #### [Screencastify]()
   ![img]()
