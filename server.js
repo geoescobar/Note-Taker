@@ -23,5 +23,4 @@ app.listen(PORT, () =>
 
 // TODO: 
 // make DELETE request work 
-// fix heroku app (not opening/ file has been created)
-// read me images are not appearing 
+
