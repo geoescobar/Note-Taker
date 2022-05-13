@@ -21,6 +21,4 @@ app.listen(PORT, () =>
 
 
 
-// TODO: 
-// make DELETE request work 
 

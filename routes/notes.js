@@ -1,3 +1,4 @@
+// dependecies 
 const router = require("express").Router();
 const res = require("express/lib/response");
 const fs = require("fs");
@@ -26,6 +27,7 @@ const readAndAppend = (content, file) => {
   });
 };
 
+// note delete function 
 const readAndDelete = (id, file) => {
   fs.readFile(file, "utf8", (err, data) => {
     if (err) {
@@ -51,9 +53,8 @@ router.get("/", (req, res) => {
   readFromFile("./db/notes.json").then((data) => res.json(JSON.parse(data)));
 });
 
-//
+// DELETE Route for note 
 router.delete("/:id", (req, res) => {
-  // req.params.id
   const { id } = req.params;
   readAndDelete(id, "./db/notes.json");
   res.send(200);

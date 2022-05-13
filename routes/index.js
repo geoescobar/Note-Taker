@@ -1,4 +1,4 @@
-// requiring/invoking express
+// dependencies
 const express = require('express');
 const app = express();
 
