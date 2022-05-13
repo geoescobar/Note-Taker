@@ -56,8 +56,6 @@
   #### [Github Pages](https://geoescobar.github.io/Note-Taker/)
   ![img](./Assets/github-pages.png)
 
-  #### [Screencastify]()
-  ![img]()
   ---
 
   ## Installation
