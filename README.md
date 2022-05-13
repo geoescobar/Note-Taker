@@ -50,11 +50,12 @@
   ## Links 
   
   #### [Github Repo](https://github.com/geoescobar/Note-Taker)
-
   ![img](./Assets/github-repo.png)
 
   #### [Github Pages](https://geoescobar.github.io/Note-Taker/)
   ![img](./Assets/github-pages.png)
+  
+  #### [Heroku Link](https://note-taker-ge.herokuapp.com/)
 
   ---
 
